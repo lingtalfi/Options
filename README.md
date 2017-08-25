@@ -24,7 +24,7 @@ Why
 ==========
 
 - centralization: and so you can name the options set (by naming the options object)
-- get method: avoids you an array_key_exists per entry
+- get method: save you an array_key_exists per entry, and/or a throw exception if not exist logic block
 
 
 Howto
