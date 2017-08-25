@@ -47,6 +47,10 @@ $mandatoryOption = $myOptions->get("mandatoryOption", null, true); // this throw
 History Log
 ------------------
 
+- 1.1.0 -- 2017-08-25
+
+    - now get also search in the protected/public properties of the instance
+    
 - 1.0.0 -- 2017-08-25
 
     - initial commit

@@ -24,6 +24,17 @@ class Options implements OptionsInterface
         if (array_key_exists($k, $this->vars)) {
             return $this->vars[$k];
         }
+
+        /**
+         * Allows you to extend this class, and
+         * then search the protected/public properties of this class
+         */
+        $props = get_object_vars($this);
+        if (array_key_exists($k, $props)) {
+            return $props[$k];
+        }
+
+
         if (true === $throwEx) {
             $this->throwException("Key not found: $k");
         }
@@ -49,5 +60,4 @@ class Options implements OptionsInterface
     {
         throw new \Exception($msg);
     }
-
 }
