@@ -27,6 +27,15 @@ Why
 - get method: save you an array_key_exists per entry, and/or a throw exception if not exist logic block
 
 
+Imagine this nice and clean statement:
+
+```php
+BigGreenButton::create()->push(BigGreenButtonOptions::create()->setShopId("1"));
+```
+
+
+
+
 Howto
 =======
 ```php
