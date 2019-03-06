@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Options;
+namespace Ling\Options;
 
 
 class Options implements OptionsInterface
